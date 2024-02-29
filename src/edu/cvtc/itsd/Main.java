@@ -150,7 +150,7 @@ public class Main {
         }
 
         updateStateLabels(name, currentState == 1);
-        scheduleTransitionFrom(CARD_STATE, null);
+        scheduleTransitionFrom(CARD_STATE, buttonAcknowledge);
       }
       else {
         showError(ERROR_NOT_FOUND);
@@ -312,6 +312,7 @@ public class Main {
     buttonAcknowledge.setForeground(Color.red);
     panelError.add(buttonAcknowledge);
     panelError.add(Box.createVerticalGlue());
+    panelStatus.add(buttonAcknowledge);
 
     // Add the cards //////////////////////////////////////////////////////////
     deck.add(panelMain, CARD_MAIN);

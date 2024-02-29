@@ -61,4 +61,15 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+#Module 5: 
 
+##Test steps
+1. Build and run Cico.main
+2. Enter 00000000 into the field and click Update.
+
+##Current Results
+3. No "Continue" button is present; User must wait full duration.
+
+##Intended Results
+3. Button is present which user can press.
+4. Upon press, user will be returned to home screen.
